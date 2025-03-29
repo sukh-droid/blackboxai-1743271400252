@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Fighting Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas" width="800" height="400"></canvas>
+        <div class="health-bars">
+            <div class="health-bar player1">
+                <div class="health-fill" id="player1Health"></div>
+            </div>
+            <div class="health-bar player2">
+                <div class="health-fill" id="player2Health"></div>
+            </div>
+        </div>
+        <div class="controls">
+            <p>Player 1: WASD to move, F to punch, G to kick</p>
+            <p>Player 2: Arrow keys to move, L to punch, K to kick</p>
+        </div>
+    </div>
+    <script src="game.js"></script>
+    <script src="character.js"></script>
+    <script src="input.js"></script>
+    <script src="collision.js"></script>
+</body>
+</html>
